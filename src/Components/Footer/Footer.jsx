@@ -27,7 +27,7 @@ export default function Footer() {
                 <img className={`mb-3 ${footerStyle.styImg}`} src={logoLine} alt="logoLine" />
                 <p>44 Danwers,  NY City, USA, 70-102 <i className="fa-solid fa-location-dot fs-6"></i></p>
                 <p>info.example@gmail.com <i className="fa-solid fa-envelope"></i></p>
-                <p>91+585-656-658 <i class="fa-solid fa-phone-volume"></i></p>
+                <p>91+585-656-658 <i className="fa-solid fa-phone-volume"></i></p>
               </div>
               {/* 2 Site policy */}
               <div className='my-3 col-12 col-md-3'>
@@ -76,7 +76,7 @@ export default function Footer() {
                 {/* social media */}
                 <div className='col-12 col-md-6 d-flex align-items-center justify-content-md-end justify-content-center'>
                   <div className={`${footerStyle.sIcon}`}>
-                    <a href="http://instagram.com" target="_blank" rel="noopener noreferrer" title="صفحتنا على انستقرام">
+                    <a href="http://instagram.com" target="_blank" rel="noopener noreferrer" title="صفحتنا على انستغرام">
                       <i className="fa-brands fa-instagram"></i>
                     </a>
                   </div>

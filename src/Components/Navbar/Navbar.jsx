@@ -1,5 +1,5 @@
 
-import React from 'react'
+import { useState } from 'react'
 import logo from '../../assets/img/logo.png'
 import { Link, NavLink } from 'react-router-dom'
 import navbarStyle from '../Navbar/Navbar.module.css'
@@ -12,7 +12,12 @@ export default function Navbar() {
     }
   }
 
-  
+  const [lang, setLang] = useState("en");
+
+  const handleLangChange = (value) => {
+    setLang(value);
+  };
+
   return (
     <>
     <nav className={`navbar navbar-expand-lg ${navbarStyle.navColor}`}>
@@ -31,13 +36,15 @@ export default function Navbar() {
           <ul className="navbar-nav d-flex flex-row align-items-center justify-content-center gap-2 pe-1">
             
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle text-white" to=""role="button"data-bs-toggle="dropdown"aria-expanded="false">EN</Link>
+              <Link className="nav-link dropdown-toggle text-white" role="button"data-bs-toggle="dropdown"aria-expanded="false">
+                {lang === "en" ? "EN" : "AR"}
+                </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <Link className="dropdown-item" to=""> 🇪🇬 العربية</Link>
+                  <button className="dropdown-item" onClick={() => handleLangChange("ar")}> 🇪🇬 العربية</button>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to=""> 🇬🇧 English</Link>
+                  <button className="dropdown-item" onClick={() => handleLangChange("en")}> 🇬🇧 English</button>
                 </li>
               </ul>
             </li>
