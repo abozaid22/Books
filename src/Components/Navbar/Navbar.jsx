@@ -5,6 +5,7 @@ import { Link, NavLink } from 'react-router-dom'
 import navbarStyle from '../Navbar/Navbar.module.css'
 
 export default function Navbar() {
+  const [lang, setLang] = useState("en");
     function closeNav() {
     let nav = document.querySelector(".navbar-collapse");
     if (nav) {
@@ -12,7 +13,6 @@ export default function Navbar() {
     }
   }
 
-  const [lang, setLang] = useState("en");
 
   const handleLangChange = (value) => {
     setLang(value);
