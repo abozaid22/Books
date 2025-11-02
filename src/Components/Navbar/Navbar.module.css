@@ -1,0 +1,50 @@
+
+.navColor{
+    background: #3D464D;
+}
+
+.lineLink {
+  position: relative;
+}
+.lineLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background: #E99239;
+}
+
+.maxw{
+  max-width: 250px;
+}
+
+.colorOrange {
+  background-color: #E99239;
+  color: #fff;
+  border: none;
+  padding-inline: 10px;
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+}
+.colorOrange:hover,
+.colorOrange:active{
+  background-color: #cf7a2c !important;
+  color: #fff !important;
+}
+
+
+@media screen and (max-width: 992px) {
+  .lineLink::after {
+  width: 0px;
+  }
+  form{
+    padding: 10px ;
+  }
+
+}
