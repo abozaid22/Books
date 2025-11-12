@@ -1,0 +1,40 @@
+
+.lon{
+    background-color: #3D464D;
+}
+
+.h2Reviews{
+    color: #E99239;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: clamp(15px,3vw,28px);
+}
+
+.pReviews{
+    line-height: 25px;
+    font-size: 14px;
+    color: #F5F5F5;
+}
+
+.ReviewsButton{
+    background-color: #E99239;
+    color: #fff;
+    border: none;
+    width: clamp(150px,2vw,24px);
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.ReviewsButton:hover,
+.ReviewsButton:active{
+    background-color:#e38424 !important;
+    color: #fff !important;
+}
+
+/* ------- */
+
+.imgReviews{
+    min-width: 250px;
+    max-width: 400px;
+}
+

@@ -6,11 +6,11 @@
     width: 50px !important;
 }
 
-i{
+.footerColor i{
     color: #E99239;
 }
 
-p{
+.footerColor p{
     font-size: 12px;
 }
 

@@ -1,0 +1,62 @@
+
+.uptable{
+    min-width: 750px;
+    max-width: 100%;
+    /* overflow: scroll; */
+}
+.tablesty{
+    width: 100% !important;
+    overflow-x: auto !important;
+    text-align: end !important;
+}
+
+.imgsty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content !important;
+}
+.imgsty div {
+    width: 80px;
+    padding:0 0 0 5px ;
+}
+
+.btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn2 button:first-child{
+    background-color: #19191933;
+    font-weight: bold;
+}
+.btn2 button:first-child:hover,
+.btn2 button:first-child:active{
+    background-color: #19191955 !important;
+}
+.btn2 button:last-child{
+    background-color: #E99239;
+    color: #fff;
+    font-weight: bold;
+}
+.btn2 button:last-child:hover,
+.btn2 button:last-child:active{
+    background-color: #cf7c2c !important;
+    color: #fff;
+}
+
+
+
+/* ---------- Buttons ---------- */
+.btnsty{
+    background-color: #E99239;
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+}
+.btnsty:hover,
+.btnsty:active{
+    background-color: #cf7c2c !important;
+    color: white !important;
+}
+

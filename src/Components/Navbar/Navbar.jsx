@@ -19,11 +19,12 @@ export default function Navbar() {
   };
 
   return (
-    <>
+    <> 
+    {/*  position-fixed w-100 z-3 */}
     <nav className={`navbar navbar-expand-lg ${navbarStyle.navColor}`}>
       <div className="container-fluid">
 
-        <Link className="navbar-brand order-md-2 order-2 text-lg-start text-end m-0" to="/">
+        <Link onClick={closeNav}  className="navbar-brand order-md-2 order-2 text-lg-start text-end m-0" to="/">
           <img className="w-50" src={logo} alt="logo" />
         </Link>
 
@@ -56,7 +57,7 @@ export default function Navbar() {
               <Link to='' className="text-white fa-regular fa-bookmark"></Link>
             </li>
             <li>
-              <Link to='' className="text-white fa-solid fa-cart-shopping"></Link>
+              <Link to='/Cart' onClick={closeNav} className="text-white fa-solid fa-cart-shopping"></Link>
             </li>
 
           </ul>
