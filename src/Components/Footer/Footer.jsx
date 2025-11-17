@@ -2,6 +2,7 @@
 import footerStyle from './Footer.module.css'
 import logoLine from '../../assets/img/smallicon.png'
 import imgPayment from '../../assets/img/payment.png'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -22,30 +23,30 @@ export default function Footer() {
             </div>
 
               {/* 1 contact */}
-              <div className='my-3 col-12 col-md-3'>
+              <div className='d-flex flex-column align-items-end my-3 col-12 col-md-3'>
                 <h5>تواصل معنا</h5>
                 <img className={`mb-3 ${footerStyle.styImg}`} src={logoLine} alt="logoLine" />
-                <p>44 Danwers,  NY City, USA, 70-102 <i className="fa-solid fa-location-dot fs-6"></i></p>
-                <p>info.example@gmail.com <i className="fa-solid fa-envelope"></i></p>
-                <p>91+585-656-658 <i className="fa-solid fa-phone-volume"></i></p>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>44 Danwers,  NY City, USA, 70-102 <i className="fa-solid fa-location-dot fs-6"></i></Link>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>info.example@gmail.com <i className="fa-solid fa-envelope"></i></Link>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>91+585-656-658 <i className="fa-solid fa-phone-volume"></i></Link>
               </div>
               {/* 2 Site policy */}
-              <div className='my-3 col-12 col-md-3'>
+              <div className='d-flex flex-column align-items-end my-3 col-12 col-md-3'>
                 <h5>سياسة الموقع</h5>
                 <img className={`mb-3 ${footerStyle.styImg}`} src={logoLine} alt="logoLine" />
-                <p>الشروط والأحكام <i className="fa-solid fa-chevron-left"></i></p>
-                <p>سياسة الشحن <i className="fa-solid fa-chevron-left"></i></p>
-                <p>الخصوصية <i className="fa-solid fa-chevron-left"></i></p>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>الشروط والأحكام <i className="fa-solid fa-chevron-left"></i></Link>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>سياسة الشحن <i className="fa-solid fa-chevron-left"></i></Link>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>الخصوصية <i className="fa-solid fa-chevron-left"></i></Link>
               </div>
               {/* 3 website */}
-              <div className='my-3 col-12 col-md-2'>
+              <div className='d-flex flex-column align-items-end my-3 col-12 col-md-2'>
                 <h5>الموقع</h5>
                 <img className={`mb-3 ${footerStyle.styImg}`} src={logoLine} alt="logoLine" />
-                <p>الرئيسية <i className="fa-solid fa-chevron-left"></i></p>
-                <p>جميع الكتب <i className="fa-solid fa-chevron-left"></i></p>
-                <p>منتجات جديدة <i className="fa-solid fa-chevron-left"></i></p>
-                <p>المدخرات <i className="fa-solid fa-chevron-left"></i></p>
-                <p>المراجعات <i className="fa-solid fa-chevron-left"></i></p>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>الرئيسية <i className="fa-solid fa-chevron-left"></i></Link>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>جميع الكتب <i className="fa-solid fa-chevron-left"></i></Link>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>منتجات جديدة <i className="fa-solid fa-chevron-left"></i></Link>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>المدخرات <i className="fa-solid fa-chevron-left"></i></Link>
+                <Link to={''} className={`${footerStyle.styleLinks}`}>المراجعات <i className="fa-solid fa-chevron-left"></i></Link>
               </div>
               {/* 4 form */}
               <div className='my-3 col-12 col-md-4 d-flex flex-column justify-content-between'>

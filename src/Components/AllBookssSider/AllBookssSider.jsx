@@ -69,7 +69,7 @@ function SamplePrevArrow(props) {
          <p>جميع الكتب</p>
        </div>
 
-      <div className=' position-relative'>
+      <div className=' position-relative mb-lg-0 mb-5'>
         <Slider {...settings}>              
           {books.map((book) => (
               <AllBooks key={book.id} books={book} />

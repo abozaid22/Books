@@ -3,9 +3,21 @@
     background: #3D464D;
 }
 
+.iconss{
+    color: #fff !important;
+    transition: 0.2s ease-in-out;
+}
+
 .lineLink {
   position: relative;
+  transition: 0.2s ease-in-out;
 }
+.lineLink:hover,
+.lineLink1:hover,
+.iconss:hover {
+  color: #E99239 !important;
+}
+
 .lineLink::after {
   content: '';
   position: absolute;
@@ -19,6 +31,8 @@
 
 .maxw{
   max-width: 250px;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .colorOrange {

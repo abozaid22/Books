@@ -37,7 +37,7 @@ export default function Navbar() {
           <ul className="navbar-nav d-flex flex-row align-items-center justify-content-center gap-2 pe-1">
             
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle text-white" role="button"data-bs-toggle="dropdown"aria-expanded="false">
+              <Link className={`nav-link dropdown-toggle ${navbarStyle.iconss}`} role="button"data-bs-toggle="dropdown"aria-expanded="false">
                 {lang === "en" ? "EN" : "AR"}
                 </Link>
               <ul className="dropdown-menu">
@@ -51,13 +51,13 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link to='' className="text-white fa-regular fa-user"></Link>
+              <Link to='' className={`${navbarStyle.iconss} fa-regular fa-user`}></Link>
             </li>
             <li>
-              <Link to='' className="text-white fa-regular fa-bookmark"></Link>
+              <Link to='' className={`${navbarStyle.iconss} fa-regular fa-bookmark`}></Link>
             </li>
             <li>
-              <Link to='/Cart' onClick={closeNav} className="text-white fa-solid fa-cart-shopping"></Link>
+              <Link to='/Cart' onClick={closeNav} className={`${navbarStyle.iconss} fa-solid fa-cart-shopping`}></Link>
             </li>
 
           </ul>
@@ -73,7 +73,7 @@ export default function Navbar() {
 
           <ul className="navbar-nav mb-2 mb-lg-0 ">
             <li className="nav-item m-auto">
-              <NavLink onClick={closeNav} className="nav-link active text-white" aria-current="page" to="">المراجعات</NavLink>
+              <NavLink onClick={closeNav} className={`nav-link active text-white ${navbarStyle.lineLink1}`} aria-current="page" to="">المراجعات</NavLink>
             </li>
             <li className="nav-item m-auto">
               <NavLink onClick={closeNav} className={`nav-link text-white ps-2 ${navbarStyle.lineLink}`} to="">المذكرات</NavLink>
